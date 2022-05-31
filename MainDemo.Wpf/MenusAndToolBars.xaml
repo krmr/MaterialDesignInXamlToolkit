@@ -330,6 +330,31 @@
                 </TextBox.ContextMenu>
             </TextBox>
         </smtx:XamlDisplay>
+
+        <smtx:XamlDisplay
+            UniqueKey="menus_6"
+            DockPanel.Dock="Top"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="5 16 0 0">
+            <ToolBarTray>
+                <ToolBar Style="{StaticResource MaterialDesignToolBar}"
+                    OverflowMode="Never"
+                         Background="{StaticResource MaterialDesignChipBackground}">
+                    <ToolBar.Resources>
+                            <Style TargetType="{x:Type Grid}">
+                                <Setter Property="Visibility" Value="Collapsed" />
+                            </Style>
+                    </ToolBar.Resources>
+                    <Button
+                        ToolTip="A"
+                        Content="{materialDesign:PackIcon Kind=AlphaABox}"/>
+                    <Button
+                        ToolTip="B"
+                        Content="{materialDesign:PackIcon Kind=AlphaBBoxOutline}"/>
+                </ToolBar>
+            </ToolBarTray>
+        </smtx:XamlDisplay>
     </DockPanel>
 </UserControl>
 
